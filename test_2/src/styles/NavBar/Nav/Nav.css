@@ -1,0 +1,72 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15vh;
+  padding: 0 5em;
+}
+
+.logo__wrapper {
+  height: 100%;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__wrapper img {
+  height: 50%;
+  width: auto;
+}
+
+.logo__wrapper a {
+  margin-left: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav__links li {
+  font-weight: 600;
+  padding-left: 2em;
+}
+
+.nav__links li:not(:last-child) {
+  font-size: 1.5rem;
+}
+
+.nav__links li:last-child a {
+  color: #51d2f2;
+  border: 1px solid #51d2f2;
+  border-radius: 10px;
+  padding: 0.5em 3em;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav__links li:last-child a:hover {
+  color: white;
+  background-color: #51d2f2;
+}
+/*# sourceMappingURL=Nav.css.map */
