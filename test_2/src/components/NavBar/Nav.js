@@ -8,7 +8,7 @@ const Nav = () => {
     <div className="navbar">
       <div className="logo__wrapper">
         <img src={logo} alt="Company Logo" />
-        <a href="#">HOME</a>
+        <a href="#">ERP SOLUTIONS</a>
       </div>
       <ul className="nav__links">
         <li>

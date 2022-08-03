@@ -25,7 +25,7 @@ const StyledMenu = styled.ul`
   li {
     padding: 1.5em 0;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 500;
 
     &:last-child {
       a {

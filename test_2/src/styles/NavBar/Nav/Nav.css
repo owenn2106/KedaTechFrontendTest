@@ -8,7 +8,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 15vh;
+  width: 100%;
   padding: 0 5em;
 }
 
@@ -30,8 +34,9 @@
 
 .logo__wrapper a {
   margin-left: 1.5em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
+  color: white;
 }
 
 .nav__links {
@@ -48,25 +53,37 @@
 }
 
 .nav__links li {
-  font-weight: 600;
-  padding-left: 2em;
+  font-weight: 400;
+  padding-left: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__links li:not(:last-child) {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+.nav__links li:not(:last-child) a {
+  color: white;
 }
 
 .nav__links li:last-child a {
-  color: #51d2f2;
-  border: 1px solid #51d2f2;
-  border-radius: 10px;
-  padding: 0.5em 3em;
+  font-size: 0.8rem;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.8em 3em;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 .nav__links li:last-child a:hover {
   color: white;
-  background-color: #51d2f2;
+  background-color: transparent;
 }
 /*# sourceMappingURL=Nav.css.map */
