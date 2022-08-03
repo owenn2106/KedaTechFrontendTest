@@ -8,7 +8,7 @@ import website from "../../images/contact/website.png";
 
 const Contact = () => {
   return (
-    <div className="contact__wrapper">
+    <div className="contact__wrapper" id="contact">
       <div className="message__section">
         <h2>Send us a message</h2>
         <div className="message__form">

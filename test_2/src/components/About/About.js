@@ -7,7 +7,7 @@ import traveloka from "../../images/clients/traveloka.png";
 
 const About = () => {
   return (
-    <div className="about__wrapper">
+    <div className="about__wrapper" id="about">
       <div className="container">
         <div className="about__title">
           <h2>ERP Solutions</h2>

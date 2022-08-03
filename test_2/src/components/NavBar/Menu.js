@@ -19,7 +19,7 @@ const StyledMenu = styled.ul`
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
   opacity: ${({ open }) => (open ? "1" : "0")};
 
-  background-color: rgb(20, 26, 31);
+  background-color: #f7f7fd;
   z-index: 9;
 
   li {
@@ -29,40 +29,47 @@ const StyledMenu = styled.ul`
 
     &:last-child {
       a {
-        color: #51d2f2;
-        border: 1px solid #51d2f2;
+        color: white;
+        border: 1px solid #696edd;
         border-radius: 10px;
+        background-color: #696edd;
         padding: 0.5em 3em;
 
         transition: all 0.3s ease;
 
         &:hover {
-          color: white;
-          background-color: #51d2f2;
+          color: #696edd;
+          background-color: transparent;
         }
       }
     }
 
     a {
-      color: white;
+      color: #696edd;
     }
   }
 `;
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen, setOpenModal }) => {
   return (
     <StyledMenu open={open}>
       <li>
-        <a href="#">ABOUT</a>
+        <a href="#about" onClick={() => setOpen(false)}>
+          ABOUT
+        </a>
       </li>
       <li>
-        <a href="#">PRICING</a>
+        <a href="#pricing" onClick={() => setOpen(false)}>
+          PRICING
+        </a>
       </li>
       <li>
-        <a href="#">CONTACT</a>
+        <a href="#contact" onClick={() => setOpen(false)}>
+          CONTACT
+        </a>
       </li>
       <li>
-        <a href="#">LOGIN</a>
+        <a onClick={() => setOpenModal(true)}>LOGIN</a>
       </li>
     </StyledMenu>
   );

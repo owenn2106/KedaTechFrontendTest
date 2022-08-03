@@ -17,7 +17,9 @@ const Header = () => {
         Big or small, physical or digital, we can help you create lasting impact
         with your customers
       </p>
-      <a className="header__cta">Our Pricing</a>
+      <a className="header__cta" href="#pricing">
+        Our Pricing
+      </a>
 
       <div className="header__summary">
         <div className="summary__title">

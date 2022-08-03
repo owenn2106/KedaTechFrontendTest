@@ -78,6 +78,7 @@
   border: 1px solid white;
   border-radius: 20px;
   padding: 0.8em 3em;
+  cursor: pointer;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
