@@ -11,6 +11,18 @@
   padding: 4em;
 }
 
+@media screen and (max-width: 768px) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__wrapper > * {
+    padding: 4em 2em;
+  }
+}
+
 .message__section h2, .contact__header h2 {
   font-size: 2.5rem;
 }
@@ -109,14 +121,32 @@
   padding-bottom: 3em;
 }
 
+.contact__us .contact__item .item__logo {
+  margin-right: 2em;
+}
+
 .contact__us .contact__item .item__logo img {
   width: 25px;
   height: auto;
-  margin-right: 2em;
 }
 
 .contact__us .contact__item .item__detail p {
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .contact__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__item .item__logo {
+    margin-right: 0 !important;
+  }
+  .contact__item .item__detail p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

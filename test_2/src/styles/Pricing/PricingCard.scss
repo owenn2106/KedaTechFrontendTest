@@ -4,6 +4,12 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+    .cards__wrapper {
+        flex-direction: column;
+    }
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -117,5 +123,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        margin-bottom: 2em;
     }
 }

@@ -8,6 +8,16 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .contact__wrapper {
+        flex-direction: column;
+
+        & > * {
+            padding: 4em 2em;
+        }
+    }
+}
+
 .message__section h2, .contact__header h2 {
     font-size: 2.5rem;
 }
@@ -82,16 +92,32 @@
 
         padding-bottom: 3em;
 
-        .item__logo img {
-            width: 25px;
-            height: auto;
-
+        .item__logo {
             margin-right: 2em;
+
+            img {
+                width: 25px;
+                height: auto;
+            }
         }
 
         .item__detail p {
             font-size: 1.2rem;
             line-height: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact__item {
+        flex-direction: column;
+
+        .item__logo {
+            margin-right: 0 !important;
+        }
+
+        .item__detail p {
+            text-align: center;
         }
     }
 }
