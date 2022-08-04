@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "../../styles/Contact/Contact.css";
 import address from "../../images/contact/address.png";
@@ -9,17 +10,42 @@ import website from "../../images/contact/website.png";
 const Contact = () => {
   return (
     <div className="contact__wrapper" id="contact">
-      <div className="message__section">
-        <h2>Send us a message</h2>
-        <div className="message__form">
+      <motion.div
+        initial={{ x: "-100%" }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="message__section"
+      >
+        <motion.h2
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Send us a message
+        </motion.h2>
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="message__form"
+        >
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email Address" />
           <input type="text" placeholder="Subject" />
           <textarea placeholder="Your Message"></textarea>
           <button>Send Message</button>
-        </div>
-      </div>
-      <div className="contact__us">
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="contact__us"
+      >
         <div className="contact__header">
           <h2>Contact us</h2>
           <p>We're open for any suggestion or just to have a chat!</p>
@@ -68,7 +94,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

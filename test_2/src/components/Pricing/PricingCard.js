@@ -1,11 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "../../styles/Pricing/PricingCard.css";
 
 const PricingCard = () => {
   return (
     <div className="cards__wrapper">
-      <div className="card">
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="card"
+      >
         <div className="card__title">
           <h2>Basic</h2>
         </div>
@@ -25,8 +32,14 @@ const PricingCard = () => {
         <div className="card__cta">
           <a href="#">Learn More</a>
         </div>
-      </div>
-      <div className="card">
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="card"
+      >
         <div className="card__title">
           <h2>Business</h2>
         </div>
@@ -46,8 +59,14 @@ const PricingCard = () => {
         <div className="card__cta">
           <a href="#">Learn More</a>
         </div>
-      </div>
-      <div className="card">
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="card"
+      >
         <div className="card__title">
           <h2>Entrepreneur</h2>
         </div>
@@ -67,7 +86,7 @@ const PricingCard = () => {
         <div className="card__cta">
           <a href="#">Learn More</a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

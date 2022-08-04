@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "../../styles/Header/Header.css";
 import web from "../../images/website.png";
@@ -10,22 +11,58 @@ import features from "../../images/features.png";
 const Header = () => {
   return (
     <div className="header__wrapper">
-      <h1 className="header__title">
+      <motion.h1
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="header__title"
+      >
         Grow Your Business With Our ERP Solution.
-      </h1>
-      <p className="header__tagline">
+      </motion.h1>
+      <motion.p
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="header__tagline"
+      >
         Big or small, physical or digital, we can help you create lasting impact
         with your customers
-      </p>
-      <a className="header__cta" href="#pricing">
+      </motion.p>
+      <motion.a
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          delay: 0.8,
+        }}
+        className="header__cta"
+        href="#pricing"
+      >
         Our Pricing
-      </a>
+      </motion.a>
 
       <div className="header__summary">
-        <div className="summary__title">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.8,
+          }}
+          className="summary__title"
+        >
           <p>WHY USE OUR PRODUCTS</p>
-        </div>
-        <div className="summary__content">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.8,
+          }}
+          className="summary__content"
+        >
           <div className="content__item">
             <img src={web} alt="Web Illustration" />
             <p>100% Web Based</p>
@@ -46,7 +83,7 @@ const Header = () => {
             <img src={features} alt="Web Illustration" />
             <p>Full Features</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

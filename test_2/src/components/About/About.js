@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "../../styles/About/About.css";
 import shopee from "../../images/clients/shopee.png";
@@ -9,10 +10,22 @@ const About = () => {
   return (
     <div className="about__wrapper" id="about">
       <div className="container">
-        <div className="about__title">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="about__title"
+        >
           <h2>ERP Solutions</h2>
-        </div>
-        <div className="about__content">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="about__content"
+        >
           <p>
             ERP Solutions is a unique organization in the Enterprise Business
             Applications space providing innovative, cost-effective and
@@ -28,8 +41,14 @@ const About = () => {
             increase productivity, minimize costs and maximize return on
             investment.
           </p>
-        </div>
-        <div className="clients">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="clients"
+        >
           <h2>OUR TRUSTING CLIENTS</h2>
           <div className="client__wrapper">
             <div className="image__wrapper">
@@ -42,7 +61,7 @@ const About = () => {
               <img src={traveloka} alt="" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
