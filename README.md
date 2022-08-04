@@ -2,7 +2,7 @@
 
 Developer: Owenn Gimli
 
-## The test contains of 2 parts:
+## The test consists of 2 parts:
 
 - ### Part 1 (Basic JavaScript)
 
