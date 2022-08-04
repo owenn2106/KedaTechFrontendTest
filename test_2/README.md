@@ -1,5 +1,7 @@
 # Test 2 - ERP Solutions Website
 
+Website is deployed to Netlify and can be accessed through [here](https://jazzy-druid-626440.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
